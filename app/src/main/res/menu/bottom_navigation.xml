@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/risk"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="Stay Save" />
+
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/ic_mail_black_24dp"
+        android:title="Messages" />
+ <item
+        android:id="@+id/personalize"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Account" />
+
+
+</menu>

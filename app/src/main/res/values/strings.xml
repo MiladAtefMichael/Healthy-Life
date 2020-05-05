@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Healthy Life</string>
+    <string name="heart_rate">50 BPM</string>
+    <string name="prussure">120/80</string>
+    <string name="exercise">1000 cal</string>
+    <string name="sleep">8 h</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="message">message</string>
+    <string name="personalize">personalize</string>
+    <string name="home">Home</string>
+    <string name="resk">resk</string>
+    <string name="title_activity_meloooo">meloooo</string>
+</resources>

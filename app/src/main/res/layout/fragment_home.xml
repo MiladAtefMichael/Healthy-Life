@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeFragment"
+    android:id="@+id/test2"
+    android:background="@drawable/background">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+   <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp">
+
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_shape"
+                android:padding="10dp"
+                android:id="@+id/heart"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/heart_photo"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/item_shape"
+                    android:textAlignment="center"
+                    android:text="@string/heart_rate"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_shape"
+                android:padding="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/pressure"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/pressure"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/item_shape"
+                    android:textAlignment="center"
+                    android:text="@string/prussure"
+                    android:textSize="20dp"
+                    android:id="@+id/pressure_text"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_shape"
+                android:padding="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/exercise"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/photo_photo"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/item_shape"
+                    android:textAlignment="center"
+                    android:text="@string/exercise"
+                    android:textSize="20dp"
+                    android:id="@+id/exercise_text"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_shape"
+                android:padding="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/sleep"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/sleep_photo"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/item_shape"
+                    android:textAlignment="center"
+                    android:text="@string/sleep"
+                    android:textSize="20dp"
+                    android:id="@+id/sleep_text"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+</FrameLayout>
