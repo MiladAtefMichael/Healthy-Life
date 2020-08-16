@@ -117,16 +117,7 @@
                     android:layout_marginVertical="10dp"
                     android:inputType="textEmailAddress"
                     android:id="@+id/email"/>
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/active_image_shape"
-                    android:hint="username"
-                    android:textColorHint="#9A1BFC"
-                    android:textSize="20dp"
-                    android:paddingHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:id="@+id/username"/>
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -138,6 +129,26 @@
                     android:layout_marginVertical="10dp"
                     android:inputType="textPassword"
                     android:id="@+id/password"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/active_image_shape"
+                    android:hint="your online clinic name"
+                    android:textColorHint="#9A1BFC"
+                    android:textSize="20dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/clinic_name"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/active_image_shape"
+                    android:hint="set password for clinic"
+                    android:textColorHint="#9A1BFC"
+                    android:textSize="20dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/clinic_password"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="50dp"

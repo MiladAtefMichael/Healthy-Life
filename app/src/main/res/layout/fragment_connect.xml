@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    tools:context=".connect"
+    android:background="@drawable/active_image_shape">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="connect to your watch"
+        android:textSize="30dp"
+        android:textColor="#2196F3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="enter number in you watch "
+        android:textSize="15dp"
+        />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/active_image_shape"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:hint="4 digit here"
+            android:id="@+id/code"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:id="@+id/cancel_connect"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_button"
+                android:text="cancel"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                android:layout_marginHorizontal="10dp"/>
+            <Button
+                android:id="@+id/connect"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_button"
+                android:text="connect"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

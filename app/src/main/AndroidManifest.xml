@@ -4,32 +4,45 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".saveGetStarted"></activity>
+        <service android:name="userSession.DataManagement" />
+        <activity android:name=".ui.main.patientInterface"></activity>
+        <activity
+            android:name=".doctor_page"
+            android:label="@string/title_activity_doctor_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".changeAccountData" />
+        <activity android:name=".AddMyDoctor" />
+        <activity android:name=".about" />
         <activity android:name=".signIn" />
-        <activity android:name=".signUp" />
-        <activity android:name=".sleep" />
+        <activity android:name=".signUp" >
+
+        </activity>
         <activity android:name=".burnCalories" />
         <activity android:name=".pressure" />
         <activity android:name=".heartRate" />
-        <activity
-            android:name=".meloooo"
-            android:label="@string/title_activity_meloooo" />
-        <activity android:name=".splash">
+        <activity android:name=".splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>

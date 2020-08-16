@@ -15,5 +15,10 @@
     <string name="personalize">personalize</string>
     <string name="home">Home</string>
     <string name="resk">resk</string>
+
     <string name="title_activity_meloooo">meloooo</string>
+    <string name="title_activity_doctor_page">doctorPage</string>
+    <string name="tab_text_1">stable</string>
+    <string name="tab_text_2">need check</string>
+    <string name="tab_text_3">critical</string>
 </resources>

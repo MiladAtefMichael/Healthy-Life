@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:id="@+id/counter"
+            android:id="@+id/p_counter"
             android:layout_above="@+id/bpm"
             android:padding="10dp"
             android:text="120/80"
@@ -147,6 +147,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/p_go"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button"
@@ -156,6 +157,7 @@
             android:textColor="#fff"/>
     </LinearLayout>
     <Button
+        android:id="@+id/p_now"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"

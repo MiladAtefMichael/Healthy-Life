@@ -1,29 +1,23 @@
 package com.example.healthylife;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ImageView;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.bumptech.glide.Glide;
-import com.example.healthylife.homeFragment;
-import com.example.healthylife.messageFragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
 /*  ImageView heartGif;
     ImageView preesure;
     ImageView exercise;
     ImageView sleep;*/
+FloatingActionButton connect;
 
     BottomNavigationView bottomNavigation;
 
@@ -32,8 +26,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bottomNavigation = findViewById(R.id.nav_view);
-
+        connect=findViewById(R.id.connec_fab);
          bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+         connect.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 openFragment(new connect());
+             }
+         });
+
 
     /*  heartGif=heartGif. findViewById(R.id.heart_gif);
         Glide.with(this).load(R.raw.heart_rate).into(heartGif);
@@ -65,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.home:
-
                             openFragment(new homeFragment());
                             return true;
                         case R.id.message:
@@ -74,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.risk:
                            openFragment(new getStarted());
                            return true;
+                        case R.id.account:
+                            openFragment(new accountFragment());
+                            return true;
 
                     }
                     return false;
